@@ -100,7 +100,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Camila Music"
+        user.first_name = "Assistant"
     usar = user
     wew = usar.id
     try:
@@ -201,7 +201,7 @@ async def play(_, message: Message):
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/5b2ed5398e7cc024c8838.jpg"
+            thumb_name = "https://telegra.ph/file/4349f47eea758d5630d49.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
