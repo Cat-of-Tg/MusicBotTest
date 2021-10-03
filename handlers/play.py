@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply(" **ᴘʀᴏᴄᴇssɪɴɢ...**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -100,7 +100,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "LEZY"
+        user.first_name = "ʟᴇᴢʏ"
     usar = user
     wew = usar.id
     try:
@@ -118,18 +118,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**@LEZY_MUSI_BOT s  assistant joined this group for play music 🎵**")
+                        message.chat.id, "**@LEZY_MUSI_BOT s  ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴏɴ ʏᴏᴜʀ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name}, assistant userbot couldn't join your group due to heavy join requests @teamladz_bothub . Make sure userbot is not banned in group and try again later!")
+                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name}, ᴀssɪsᴛᴀɴᴛ ᴜsᴇʀʙᴏᴛ ᴄᴏᴜʟᴅ'ᴛ ᴊᴏɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛs . Mᴀᴋᴇ sᴜʀᴇ ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ʙᴀɴɴᴇᴅ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ!")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, music bot [assistant](https://t.me/Lezy_Assistant) userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
+            f"<i>Hey {user.first_name}, ᴍᴜsɪᴄ ʙᴏᴛ [assistant](https://t.me/Lezy_Assistant) ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ, ᴀsᴋ ᴀᴅᴍɪɴ ᴛᴏ sᴇɴᴅ /play ᴄᴏᴍᴍᴀɴᴅ ғᴏʀ ᴛʜᴇ ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ɪᴛ.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -138,7 +138,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!"
+                f"❌ ᴠɪᴅᴇᴏs ʟᴏɴɢᴇʀ ᴛʜᴀɴ {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇɴ'ᴛ ᴀʟʟᴏᴡᴇᴅ!"
             )
 
         file_name = get_file_name(audio)
@@ -152,7 +152,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel 🔊",
+                        text="ᴄʜᴀɴɴᴇʟ",
                         url="https://t.me/team_lad")
                    
                 ]
@@ -190,10 +190,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="ʏᴏᴜᴛᴜʙᴇ",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="ᴅᴏᴡɴʟᴏᴀᴅ",
                             url=f"{durl}")
 
                     ]
@@ -208,7 +208,7 @@ async def play(_, message: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="YouTube 🎬",
+                                text="ʏᴏᴜᴛᴜʙᴇ",
                                 url=f"https://youtube.com")
 
                         ]
@@ -222,11 +222,11 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+            return await lel.edit("🧐 **ᴡʜᴀᴛs ᴛʜᴇ sᴏɴɢ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴘʟᴀʏ?**")
+        await lel.edit("**ғɪɴᴅɪɴɢ ᴛʜᴇ sᴏɴɢ...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("**ᴘʀᴏᴄᴇssɪɴɢ sᴏᴜɴᴅs...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -258,10 +258,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="ʏᴏᴜᴛᴜʙᴇ",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="ᴅᴏᴡɴʟᴏᴀᴅ",
                             url=f"{durl}")
 
                     ]
