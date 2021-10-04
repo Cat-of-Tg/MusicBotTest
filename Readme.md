@@ -30,9 +30,10 @@ Get STRING_NAME from here:
 - `/resume` - resume song play
 - `/skip` - play next song
 - `/end` - stop music play
+
 ## Our Telegram Channel and Group
 
-* [ᴜᴏᴅᴀᴛᴇs](https://telegram.dog/team_lad)
+* [ᴜᴘᴅᴀᴛᴇs](https://telegram.dog/team_lad)
 
 * [sᴜᴘᴘᴏʀᴛ](https://telegram.dog/teamladz_bothub)
 
@@ -40,11 +41,9 @@ Get STRING_NAME from here:
 
 ## Credits, and Thanks to 
 
-*   [ᴀʙʜɪsʜᴇᴋ](https://telegram.dog/xabhisheksingh)
-
-*. [ʟᴜᴄɪғᴇʀ](https://t.me/lmlucifer)
-
-*, [ᴄᴀᴛ ʙᴏɪ](https://telegram.dog/ok_bie_bot
+• [ᴀʙʜɪsʜᴇᴋ](https://telegram.dog/xabhisheksingh)
+• [ʟᴜᴄɪғᴇʀ](https://t.me/lmlucifer)
+• [ᴄᴀᴛ ʙᴏɪ](https://telegram.dog/ok_bie_bot)
 
 
 
