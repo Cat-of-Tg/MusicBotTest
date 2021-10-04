@@ -91,7 +91,7 @@ async def song(client, message):
     time.time()
     if song:
         await rkp.edit("Uploading...") #blaze
-        lol = "./etc/thumb.jpg"
+        lol = "https://telegra.ph/file/7ce4c7695b53c5226ace2.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
                  duration=int(rip_data["duration"]),
