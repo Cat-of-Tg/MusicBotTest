@@ -28,14 +28,14 @@ async def start(_, message: Message):
                     )
                 ],[
                    InlineKeyboardButton(
-                       "ᴏᴡɴᴇʀ",url="https://t.me/"ok_bie_bot")
+                       "ᴏᴡɴᴇʀ", url="https://t.me/"ok_bie_bot")
                    )
                ],[
                   InlineKeyboardButton(
-                     "ᴀssɪsᴛᴀɴᴛ"url="https://t.me/lezy_assistant"
+                     "ᴀssɪsᴛᴀɴᴛ", url="https://t.me/lezy_assistant"
                   ),
                 InlineKeyboardButton(
-                    "ᴄᴀᴛ ʜᴜʙ"url="https://t.me/cat_of_tg"
+                    "ᴄᴀᴛ ʜᴜʙ", url="https://t.me/cat_of_tg"
                     )
                  ]
         
