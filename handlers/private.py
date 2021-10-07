@@ -7,7 +7,7 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAIFN2FaVSk4k7VtwVXO2Tn0fScV26-dAAKrBQACca\_RVoKVRhHdAy67IQQ")
+    await message.reply_text("f""""JOIN @TEAM_LAD FOR UPDATES 💞)
     await message.reply_text(
         f"""*ʜᴇʏ, ɪᴍ'{bn} 
 ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
