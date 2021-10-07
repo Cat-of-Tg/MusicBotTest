@@ -27,9 +27,9 @@ async def start(_, message: Message):
                         "ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/lezy_music_bot?startgroup=true"
                     )
                 ],[
-                   InlineKeyboardButton(
-                       "ᴏᴡɴᴇʀ", url="https://t.me/"ok_bie_bot")
-                   )
+                   InlineKeyboardButton
+                       ("ᴏᴡɴᴇʀ", url="https://t.me/"ok_bie_bot")
+                   
                ],[
                   InlineKeyboardButton(
                      "ᴀssɪsᴛᴀɴᴛ", url="https://t.me/lezy_assistant"
