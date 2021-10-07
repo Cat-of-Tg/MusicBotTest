@@ -28,7 +28,7 @@ async def start(_, message: Message):
                     )
                 ],[
                    InlineKeyboardButton
-                       ("ᴏᴡɴᴇʀ", url="https://t.me/"ok_bie_bot")
+                       ("ᴏᴡɴᴇʀ", url="https://t.me/ok_bie_bot")
                    
                ],[
                   InlineKeyboardButton(
