@@ -15,7 +15,7 @@ async def start(_, message: Message):
 
         """,
         reply_markup=InlineKeyboardMarkup(
-            [,[
+            [
                     InlineKeyboardButton(
                         "sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeamLadz_bothub"
                     ),
