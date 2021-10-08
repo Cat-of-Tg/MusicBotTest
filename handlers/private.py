@@ -15,9 +15,6 @@ async def start(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeamLadz_bothub"
-                    ),
-                    InlineKeyboardButton(
                         "ᴄʜᴀɴɴᴇʟ", url="https://t.me/team_lad"
                     )    
                 ],[ 
@@ -28,7 +25,7 @@ async def start(_, message: Message):
                    InlineKeyboardButton
                        ("ᴏᴡɴᴇʀ", url="https://t.me/ok_bie_bot")
                    
-               ],[
+             
                   InlineKeyboardButton(
                      "ᴀssɪsᴛᴀɴᴛ", url="https://t.me/lezy_assistant"
                   ),
@@ -38,7 +35,7 @@ async def start(_, message: Message):
  
             
         ),
-     disable_web_page_preview=True
+     disable_web_page_preview=False
     )
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
