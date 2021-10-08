@@ -32,10 +32,7 @@ async def start(_, message: Message):
                   InlineKeyboardButton(
                      "ᴀssɪsᴛᴀɴᴛ", url="https://t.me/lezy_assistant"
                   ),
-                InlineKeyboardButton(
-                    "ᴄᴀᴛ ʜᴜʙ", url="https://t.me/cat_of_tg"
-                    )
-                 ]
+              ]
         
                
  
