@@ -13,7 +13,8 @@ async def start(_, message: Message):
 ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ!**""",
         reply_markup=InlineKeyboardMarkup(
-            [
+          [
+              [
                     InlineKeyboardButton(
                         "ᴄʜᴀɴɴᴇʟ", url="https://t.me/team_lad"
                     )    
@@ -28,7 +29,7 @@ async def start(_, message: Message):
                      "ᴀssɪsᴛᴀɴᴛ", url="https://t.me/lezy_assistant"
                   ),
               ]
-        
+         ]
                
  
             
