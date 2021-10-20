@@ -10,7 +10,7 @@ async def start(_, message: Message):
     
     await message.reply_text(
         f"""**ʜᴇʏ, ɪ'ᴍ {bn} 
-ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
+ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ[.](https://telegra.ph/file/f9a4e08dc4f58cc86e57e.jpg)
 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ!**""",
         reply_markup=InlineKeyboardMarkup(
           [
@@ -39,7 +39,7 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**ᴠᴏᴏᴏ iᴍ ᴏɴʟɪɴᴇ**""",
+      await message.reply_text("""**ᴠᴏᴏᴏ [ɪ ᴍ](t.me/tyra_vcRobot) ᴏɴʟɪɴᴇ**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
